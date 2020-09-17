@@ -41,7 +41,7 @@ export default async function babel7(
       allowReturnOutsideFunction: true,
       strictMode: false,
       sourceType: 'module',
-      plugins: ['dynamicImport'],
+      plugins: ['dynamicImport', ['moduleAttributes', {version: 'may-2020'}]],
     },
     caller: {
       name: 'parcel',
